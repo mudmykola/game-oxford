@@ -1,0 +1,135 @@
+.header {
+    &-inner {
+        margin-top: 40px;
+    }
+    &-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &__nav {
+            display: flex;
+            align-items: center;
+        }
+        &__menu {
+            margin-right: 52px;
+            ul {
+                display: flex;
+                align-items: center;
+            }
+            li+li {
+                margin-left: 62px;
+            }
+            a {
+                color: $c300;
+                @extend%d-tr;
+            }
+            a:hover {
+                opacity: 0.6;
+                @extend%h-tr;
+            }
+        }
+        &__reg {
+            @extend %r-btn;
+            width: 178px;
+            height: 42px;
+            margin-right: 14px;
+            @extend%d-tr;
+        }
+        &__reg:hover {
+            background: $c800;
+            color: $default;
+            @extend%h-tr;
+            @extend %border-ef;
+        }
+        &__sign {
+            width: 146px;
+            height: 42px;
+            @extend %g-global;
+            @extend%d-tr;
+        }
+        &__sign:hover {
+            background: $c800;
+            @extend%h-tr;
+            @extend %border-ef;
+        }
+    }
+    &-cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 100px;
+        &__text {
+            width: 498px;
+            p {
+                font-size: 14px;
+                line-height: 24px;
+                color: rgba(43, 47, 51, 0.6);
+            }
+            button {
+                @extend %g-global;
+                padding: 19px 89px;
+                margin: 0 auto;
+                display: block;
+                margin-top: 43px;
+                @extend%d-tr;
+            }
+            button:hover {
+                background: $c800;
+                @extend%h-tr;
+                @extend %border-ef;
+            }
+        }
+        &__title {
+            position: relative;
+            margin-bottom: 28px;
+            h3 {
+                position: relative;
+                @extend%font-eb;
+                font-size: 48px;
+                line-height: 58px;
+                color: $c300;
+                border: 2px solid #725EF3;
+                border-radius: 34px;
+                padding: 17px 34px;
+                width: 496px;
+                text-align: center;
+            }
+            p {
+                position: absolute;
+                @extend%font-b;
+                font-size: 24px;
+                line-height: 34px;
+                color: #7D6AF7;
+                top: 78%;
+                right: calc(13% + 137px);
+                background: $default;
+            }
+        }
+    }
+    &-cont__video {
+        // margin-left: 85px;
+        width: 630px;
+        iframe {
+            width: 630px;
+            height: 310px;
+            filter: drop-shadow(0px 16px 32px rgba(35, 23, 5, 0.08));
+            border-radius: 16px;
+        }
+        button {
+            @extend %r-btn;
+            padding: 12px 80px;
+        }
+    }
+}
+
+// 768
+@media (max-width: 768px) {}
+
+// 600
+@media (max-width: 600px) {}
+
+// 480
+@media (max-width: 480px) {}
+
+// 320
+@media (max-width: 320px) {}

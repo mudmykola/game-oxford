@@ -1,0 +1,114 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+    // base
+    --font-family: 'Jost', sans-serif;
+    --content-width: 1229px;
+    --container-offset: 15px;
+    --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+    // colors
+    --light-color: #fff;
+}
+
+// fonts
+%font-r {
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+}
+
+%font-m {
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+}
+
+%font-b {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+}
+
+%font-eb {
+    font-family: 'Jost', sans-serif;
+    font-weight: 800;
+}
+
+//color
+$c100:#725EF3;
+$c200:#000;
+$c300:#2B2F33;
+$c400:#3B5998;
+$c500:#55ACEE;
+$c600:#595959;
+$c700:#7F4DA0;
+$c800:#FA141B;
+$c900:#C8DAEA;
+$default:#fff;
+//btn
+%g-global {
+    @extend%font-m;
+    background: #725EF3;
+    border-radius: 6px;
+    color: $default;
+    border: none;
+    cursor: pointer;
+}
+
+%r-btn {
+    @extend%font-m;
+    color: #725EF3;
+    background: #F5F3FF;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+%h-btn {
+    @extend%font-b;
+    background: rgba(140, 154, 187, 0.09);
+    border-radius: 12px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #7D6AF7;
+    border: none;
+    cursor: pointer;
+}
+
+%input-btn {
+    @extend%font-m;
+    background: #7D6AF7;
+    box-shadow: 0px 11px 24px rgba(114, 94, 243, 0.19);
+    border-radius: 6px;
+    color: $default;
+    cursor: pointer;
+}
+
+%f-btn {
+    @extend%font-b;
+    font-size: 14px;
+    line-height: 20px;
+    color: #7D6AF7;
+    background: rgba(219, 213, 237, 0.12);
+    border: 1px solid #7D6AF7;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+//input form
+%input-f {
+    background: rgba(219, 213, 237, 0.12);
+    border: 1px solid rgba(219, 213, 237, 0.5);
+    border-radius: 6px;
+    color: #72698C;
+}
+
+//hover effect
+%border-ef {
+    box-shadow: 0px 19px 42px rgba(140, 154, 187, 0.09);
+}
+
+%d-tr {
+    transition: all 0.5s linear;
+}
+
+%h-tr {
+    transition: all 0.3s linear;
+}
