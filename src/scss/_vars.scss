@@ -31,6 +31,17 @@
     font-weight: 800;
 }
 
+%title-h2 {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #2B2F33;
+    span {
+        color: #725EF3;
+    }
+}
+
 //color
 $c100:#725EF3;
 $c200:#000;
@@ -102,7 +113,7 @@ $default:#fff;
 
 //hover effect
 %border-ef {
-    box-shadow: 0px 19px 42px rgba(140, 154, 187, 0.09);
+    box-shadow: 0px 19px 42px rgba(163, 165, 171, 0.9);
 }
 
 %d-tr {

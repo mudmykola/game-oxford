@@ -1,1 +1,1 @@
-import ex from "./components/ex.js";
+import aos from "./components/aos.js";
