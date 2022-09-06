@@ -29,11 +29,25 @@
             }
         }
         &__reg {
+            position: relative;
             @extend %r-btn;
             width: 178px;
             height: 42px;
             margin-right: 14px;
             @extend%d-tr;
+        }
+        &__reg::after {
+            position: absolute;
+            content: "";
+            display: block;
+            background-image: url('/img/svg/reg-icon.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 19px;
+            height: 19px;
+            top: 25%;
+            left: 8%;
         }
         &__reg:hover {
             background: $c800;
@@ -42,6 +56,7 @@
             @extend %border-ef;
         }
         &__sign {
+            position: relative;
             width: 146px;
             height: 42px;
             @extend %g-global;
@@ -51,6 +66,19 @@
             background: $c800;
             @extend%h-tr;
             @extend %border-ef;
+        }
+        &__sign::after {
+            position: absolute;
+            content: "";
+            display: block;
+            background-image: url('/img/svg/sign-in.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            width: 19px;
+            height: 19px;
+            top: 25%;
+            left: 15%;
         }
     }
     &-cont {
@@ -162,13 +190,193 @@
 }
 
 // 768
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .header {
+        &-inner {
+            margin-top: 20px;
+        }
+        &-top__menu {
+            display: none;
+        }
+        &-top__auth {
+            display: none;
+        }
+        &-cont {
+            flex-direction: column;
+            width: 100%;
+            margin-top: 55px;
+            &__text {
+                width: 100%;
+            }
+            &__title {
+                margin-bottom: 15px;
+                h3 {
+                    font-size: 34px;
+                    line-height: 44px;
+                    border-radius: 12px;
+                    padding: 15px;
+                    width: 289px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 28px;
+                    top: 80%;
+                    right: calc(43% + 233px);
+                }
+            }
+            &__text {
+                button {
+                    margin-top: 30px;
+                }
+            }
+            &__sub {
+                p {
+                    font-size: 12px;
+                    line-height: 22px;
+                    text-align: center;
+                }
+            }
+            &__video {
+                width: 100%;
+                iframe {
+                    width: 100%;
+                    margin: 15px 0;
+                }
+                button {
+                    margin-left: 0;
+                    width: 285px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
 
 // 600
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+    .header {
+        &-inner {
+            margin-top: 20px;
+        }
+        &-top__menu {
+            display: none;
+        }
+        &-top__auth {
+            display: none;
+        }
+        &-cont {
+            flex-direction: column;
+            width: 100%;
+            margin-top: 55px;
+            &__text {
+                width: 100%;
+            }
+            &__title {
+                margin-bottom: 15px;
+                h3 {
+                    font-size: 34px;
+                    line-height: 44px;
+                    border-radius: 12px;
+                    padding: 15px;
+                    width: 289px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 28px;
+                    top: 80%;
+                    right: calc(43% + 136px);
+                }
+            }
+            &__text {
+                button {
+                    margin-top: 30px;
+                }
+            }
+            &__sub {
+                p {
+                    font-size: 12px;
+                    line-height: 22px;
+                    text-align: center;
+                }
+            }
+            &__video {
+                width: 100%;
+                iframe {
+                    width: 100%;
+                    margin: 15px 0;
+                }
+                button {
+                    margin-left: 0;
+                    width: 285px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
 
 // 480
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .header {
+        &-inner {
+            margin-top: 20px;
+        }
+        &-top__menu {
+            display: none;
+        }
+        &-top__auth {
+            display: none;
+        }
+        &-cont {
+            flex-direction: column;
+            width: 100%;
+            margin-top: 55px;
+            &__text {
+                width: 100%;
+            }
+            &__title {
+                margin-bottom: 15px;
+                h3 {
+                    font-size: 34px;
+                    line-height: 44px;
+                    border-radius: 12px;
+                    padding: 15px;
+                    width: 289px;
+                }
+                p {
+                    font-size: 18px;
+                    line-height: 28px;
+                    top: 80%;
+                    right: calc(28% + 136px);
+                }
+            }
+            &__text {
+                button {
+                    margin-top: 30px;
+                }
+            }
+            &__sub {
+                p {
+                    font-size: 12px;
+                    line-height: 22px;
+                    text-align: center;
+                }
+            }
+            &__video {
+                width: 100%;
+                iframe {
+                    width: 100%;
+                    margin: 15px 0;
+                }
+                button {
+                    margin-left: 0;
+                    width: 285px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
 
 // 320
 @media (max-width: 320px) {
