@@ -1,0 +1,273 @@
+.card {
+    margin-top: 110px;
+    &-inner {
+        h2 {
+            margin-bottom: 60px;
+            @extend%title-h2;
+            text-align: center;
+        }
+        ul {
+            display: flex;
+        }
+        li+li {
+            margin-left: 29px;
+        }
+    }
+    &-item {
+        &__def {
+            transition: all 0.5s linear;
+            position: relative;
+            border-radius: 16px;
+            img {
+                position: relative;
+            }
+            h1 {
+                cursor: pointer;
+                font-size: 30px;
+                line-height: 40px;
+                @extend%font-b;
+                color: $default;
+                position: absolute;
+                bottom: 0;
+                left: 15%;
+                right: 0;
+                span {
+                    position: absolute;
+                    bottom: 0;
+                    width: 36px;
+                    height: 36px;
+                    border-radius: 100%;
+                    background-color: $c100;
+                    margin-left: 16px;
+                }
+                span::after {
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    background-image: url("/img/arrow.webp");
+                    background-repeat: no-repeat;
+                    top: 0;
+                    background-size: contain;
+                    background-position: center;
+                    height: 16px;
+                    width: 16px;
+                    left: calc(100% - 23px);
+                    top: calc(100% - 27px);
+                }
+            }
+        }
+        &__def:hover>&__link {
+            display: none;
+        }
+        &__hov {
+            cursor: pointer;
+            position: absolute;
+            bottom: 1%;
+            left: 0;
+            width: 100%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            background: rgba(114, 94, 243, 0.9);
+            padding: 15px 0;
+            border-radius: 0 0 16px 16px;
+            @extend%d-tr;
+            p {
+                font-size: 18px;
+                line-height: 26px;
+                @extend%font-m;
+                color: $default;
+                width: 323px;
+                text-align: center;
+            }
+            h1 {
+                cursor: pointer;
+                font-size: 30px;
+                line-height: 40px;
+                @extend%font-b;
+                color: $default;
+                position: absolute;
+                top: 0;
+                left: 17%;
+                right: 0;
+                display: block;
+            }
+        }
+    }
+    &-item {
+        &__ef1 {
+            animation: backInLeft;
+            animation-duration: 3s;
+        }
+        &__ef2 {
+            animation: backInDown;
+            animation-duration: 3s;
+        }
+        &__ef3 {
+            animation: backInRight;
+            animation-duration: 3s;
+        }
+        &__hov {
+            animation: bounce;
+            animation-duration: 4s;
+        }
+    }
+}
+
+.card-item:hover .card-item__hov {
+    display: flex;
+    transition: all 0.3s linear;
+}
+
+// 768
+@media (max-width: 768px) {
+    .card {
+        &-inner {
+            h2 {
+                margin-top: 35px;
+                font-size: 28px;
+                line-height: 38px;
+            }
+            ul {
+                flex-direction: column;
+            }
+            li {
+                width: 100%;
+            }
+            li+li {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+        &-item {
+            &__def {
+                h1 {
+                    left: 17%;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            &__hov {
+                p {
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+// 600
+@media (max-width: 600px) {
+    .card {
+        &-inner {
+            h2 {
+                margin-top: 35px;
+                font-size: 28px;
+                line-height: 38px;
+            }
+            ul {
+                flex-direction: column;
+            }
+            li {
+                width: 100%;
+            }
+            li+li {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+        &-item {
+            &__def {
+                h1 {
+                    left: 17%;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            &__hov {
+                p {
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+// 480
+@media (max-width: 480px) {
+    .card {
+        &-inner {
+            h2 {
+                margin-top: 35px;
+                font-size: 28px;
+                line-height: 38px;
+            }
+            ul {
+                flex-direction: column;
+            }
+            li {
+                width: 100%;
+            }
+            li+li {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+        &-item {
+            &__def {
+                h1 {
+                    left: 17%;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            &__hov {
+                p {
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+// 320
+@media (max-width: 320px) {
+    .card {
+        &-inner {
+            h2 {
+                margin-top: 35px;
+                font-size: 28px;
+                line-height: 38px;
+            }
+            ul {
+                flex-direction: column;
+            }
+            li {
+                width: 100%;
+            }
+            li+li {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+        &-item {
+            &__def {
+                h1 {
+                    left: 10%;
+                }
+            }
+            &__hov {
+                p {
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}

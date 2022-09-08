@@ -3,10 +3,12 @@
 @import "mixins";
 @import "fonts";
 @import "settings";
+@import "vendor";
 // подключения компонентов страницы
 @import "./components/header";
 @import "./components/burger";
 @import "./components/profit";
 @import "./components/about";
 @import "./components/learn";
+@import "./components/card";
 @import "./components/courses/menu";
