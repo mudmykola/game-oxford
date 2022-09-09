@@ -1,0 +1,80 @@
+.footer {
+    &-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 110px 0 96px;
+        &__logo {
+            width: 600px;
+            ul {
+                margin: 34px 0 15px;
+                display: flex;
+                align-items: center;
+                a {
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #7D6AF7;
+                    @extend%d-tr;
+                }
+                a:hover {
+                    opacity: 0.8;
+                    @extend%h-tr;
+                }
+                li+li {
+                    margin-left: 30px;
+                }
+            }
+            p {
+                padding-top: 15px;
+                font-size: 12px;
+                line-height: 22px;
+                color: #595959;
+                opacity: 0.55;
+            }
+        }
+        &__btn {
+            button {
+                @extend%f-btn;
+                width: 210px;
+                height: 48px;
+                @extend%d-tr;
+            }
+            button:hover {
+                @extend%border-ef;
+            }
+            button+button {
+                margin-top: 9px;
+            }
+            display: flex;
+            flex-direction: column;
+        }
+        &__social {
+            ul {
+                display: flex;
+                align-items: center;
+            }
+            li+li {
+                margin-left: 10px;
+            }
+            a {
+                @extend%d-tr;
+            }
+            a:hover {
+                @extend%h-tr;
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+// 768
+@media (max-width: 768px) {}
+
+// 600
+@media (max-width: 600px) {}
+
+// 480
+@media (max-width: 480px) {}
+
+// 320
+@media (max-width: 320px) {}
