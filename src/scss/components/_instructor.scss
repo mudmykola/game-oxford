@@ -20,7 +20,8 @@
             }
         }
         &__text {
-            @extend%border-ef;
+            cursor: pointer;
+            @extend%d-tr;
             position: relative;
             margin-left: 64px;
             width: 986px;
@@ -42,6 +43,9 @@
                 flex-wrap: wrap;
                 display: flex;
             }
+        }
+        &__text:hover {
+            @extend%border-ef;
         }
         &__text::after {
             content: "";
