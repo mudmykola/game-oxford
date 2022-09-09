@@ -60,13 +60,185 @@
 }
 
 // 768
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .istructor {
+        &-inner {
+            text-align: center;
+            h2 {
+                margin-top: 35px;
+                font-size: 28px;
+                line-height: 38px;
+            }
+            &__avatar {
+                margin: 0 auto;
+                margin-bottom: 30px;
+                animation: backInDown;
+                animation-duration: 4s;
+                h1 {
+                    font-size: 25px;
+                    line-height: 35px;
+                }
+            }
+            &__items {
+                flex-direction: column;
+            }
+            &__text {
+                margin-left: 0;
+                width: 100%;
+                padding: 35px 15px;
+                animation: backInRight;
+                animation-duration: 4s;
+                span {
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+                p {
+                    font-size: 12px;
+                    line-height: 22px;
+                }
+            }
+            &__text::after {
+                width: 40px;
+                height: 40px;
+                top: -3%;
+                left: 47%;
+            }
+        }
+    }
+}
 
 // 600
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+    .istructor {
+        &-inner {
+            text-align: center;
+            h2 {
+                margin-top: 35px;
+                font-size: 28px;
+                line-height: 38px;
+            }
+            &__avatar {
+                margin: 0 auto;
+                margin-bottom: 30px;
+                animation: backInDown;
+                animation-duration: 2s;
+                h1 {
+                    font-size: 25px;
+                    line-height: 35px;
+                }
+            }
+            &__items {
+                flex-direction: column;
+            }
+            &__text {
+                margin-left: 0;
+                width: 100%;
+                padding: 35px 15px;
+                animation: backInRight;
+                animation-duration: 2s;
+                span {
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+                p {
+                    font-size: 12px;
+                    line-height: 22px;
+                }
+            }
+            &__text::after {
+                width: 40px;
+                height: 40px;
+                top: -3%;
+                left: 47%;
+            }
+        }
+    }
+}
 
 // 480
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .istructor {
+        &-inner {
+            text-align: center;
+            h2 {
+                margin-top: 35px;
+                font-size: 28px;
+                line-height: 38px;
+            }
+            &__avatar {
+                margin: 0 auto;
+                margin-bottom: 30px;
+                h1 {
+                    font-size: 25px;
+                    line-height: 35px;
+                }
+            }
+            &__items {
+                flex-direction: column;
+            }
+            &__text {
+                margin-left: 0;
+                width: 100%;
+                padding: 35px 15px;
+                span {
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+                p {
+                    font-size: 12px;
+                    line-height: 22px;
+                }
+            }
+            &__text::after {
+                width: 40px;
+                height: 40px;
+                top: -3%;
+                left: 47%;
+            }
+        }
+    }
+}
 
 // 320
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+    .istructor {
+        &-inner {
+            text-align: center;
+            h2 {
+                margin-top: 35px;
+                font-size: 28px;
+                line-height: 38px;
+            }
+            &__avatar {
+                margin: 0 auto;
+                margin-bottom: 30px;
+                h1 {
+                    font-size: 25px;
+                    line-height: 35px;
+                }
+            }
+            &__items {
+                flex-direction: column;
+            }
+            &__text {
+                margin-left: 0;
+                width: 100%;
+                padding: 20px 15px;
+                span {
+                    font-size: 15px;
+                    line-height: 25px;
+                }
+                p {
+                    font-size: 12px;
+                    line-height: 22px;
+                }
+            }
+            &__text::after {
+                width: 40px;
+                height: 40px;
+                top: -3%;
+                left: 42%;
+            }
+        }
+    }
+}
