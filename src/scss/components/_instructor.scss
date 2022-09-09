@@ -1,0 +1,72 @@
+.istructor {
+    margin-top: 110px;
+    &-inner {
+        h2 {
+            @extend%title-h2;
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        &__items {
+            display: flex;
+        }
+        &__avatar {
+            text-align: center;
+            h1 {
+                font-size: 28px;
+                line-height: 38px;
+                @extend%font-b;
+                width: 190px;
+                color: $c300;
+            }
+        }
+        &__text {
+            @extend%border-ef;
+            position: relative;
+            margin-left: 64px;
+            width: 986px;
+            border: 1px solid #F5F5F5;
+            box-shadow: 0px 19px 42px rgba(140, 154, 187, 0.14);
+            border-radius: 10px;
+            padding: 59px 75px 98px 71px;
+            p {
+                font-size: 18px;
+                line-height: 28px;
+                color: $c300
+            }
+            span {
+                @extend%font-b;
+                font-size: 22px;
+                line-height: 32px;
+                color: $c300;
+                margin-bottom: 26px;
+                flex-wrap: wrap;
+                display: flex;
+            }
+        }
+        &__text::after {
+            content: "";
+            position: absolute;
+            display: block;
+            background-image: url("/img/gift.webp");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            top: 10%;
+            width: 76px;
+            height: 76px;
+            left: -4%;
+        }
+    }
+}
+
+// 768
+@media (max-width: 768px) {}
+
+// 600
+@media (max-width: 600px) {}
+
+// 480
+@media (max-width: 480px) {}
+
+// 320
+@media (max-width: 320px) {}
