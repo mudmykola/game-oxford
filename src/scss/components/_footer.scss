@@ -113,6 +113,16 @@
             &__btn {
                 margin: 20px 0;
             }
+            &__social {
+                margin-left: 0;
+                ul {
+                    flex-direction: row;
+                }
+                li+li {
+                    margin-top: 0;
+                    margin-left: 10px;
+                }
+            }
         }
     }
 }
@@ -121,7 +131,7 @@
 @media (max-width: 480px) {
     .footer {
         &-inner {
-            padding: 60px 0;
+            padding: 83px 0;
             flex-direction: column;
             text-align: center;
             width: 100%;
@@ -144,6 +154,16 @@
             &__btn {
                 margin: 20px 0;
             }
+            &__social {
+                margin-left: 0;
+                ul {
+                    flex-direction: row;
+                }
+                li+li {
+                    margin-top: 0;
+                    margin-left: 10px;
+                }
+            }
         }
     }
 }
@@ -152,7 +172,7 @@
 @media (max-width: 320px) {
     .footer {
         &-inner {
-            padding: 60px 0;
+            padding: 100px 0;
             flex-direction: column;
             text-align: center;
             width: 100%;
@@ -174,6 +194,16 @@
             }
             &__btn {
                 margin: 20px 0;
+            }
+            &__social {
+                margin-left: 0;
+                ul {
+                    flex-direction: row;
+                }
+                li+li {
+                    margin-top: 0;
+                    margin-left: 10px;
+                }
             }
         }
     }
