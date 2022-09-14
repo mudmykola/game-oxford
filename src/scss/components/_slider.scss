@@ -1,5 +1,6 @@
 .slider {
     margin: 110px 0px;
+    position: relative;
     &-title {
         @extend%title-h2;
         text-align: center;
@@ -7,21 +8,25 @@
     }
     &-inner {
         background-image: url('/img/slider-bg.webp');
-        width: 100%;
+        // width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         border-radius: 16px;
         background-color: $c100;
         opacity: 0.8;
+        z-index: -1;
+        // position: relative;
         ul {
             display: flex;
             align-items: center;
-            justify-content: center;
-            padding-top: 35px;
+            // justify-content: center;
+            padding: 35px 0;
+            position: relative;
+            object-fit: cover;
         }
         li {
-            width: 285px;
+            max-width: 285px;
             text-align: center;
             background: #FFFFFF;
             box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
@@ -49,6 +54,9 @@
                 line-height: 29px;
                 text-decoration: underline;
             }
+        }
+        &__box {
+            overflow: hidden;
         }
         &__items {
             padding: 38px 33px 33px 33px;
@@ -93,16 +101,135 @@
             }
         }
     }
+    &-btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1;
+        margin: 0 auto;
+        &__next {
+            position: absolute;
+            margin-right: 30px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 100%;
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            right: 3%;
+            z-index: 1;
+            top: 50%;
+            cursor: pointer;
+        }
+        &__prev {
+            position: absolute;
+            margin-left: 30px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 100%;
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            left: 3%;
+            z-index: 1;
+            top: 50%;
+            cursor: pointer;
+        }
+    }
 }
 
 // 768
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .slider {
+        margin: 75px 0;
+        &-title {
+            h2 {
+                font-size: 28px;
+                line-height: 38px;
+            }
+        }
+    }
+}
 
 // 600
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+    .slider {
+        margin: 75px 0;
+        &-title {
+            h2 {
+                font-size: 28px;
+                line-height: 38px;
+            }
+        }
+        &-inner {
+            ul {
+                width: 100%;
+            }
+            li {
+                max-width: 266px;
+            }
+            li+li {
+                margin-left: 10px;
+            }
+        }
+        &-btn {
+            display: block;
+        }
+    }
+}
 
 // 480
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .slider {
+        margin: 75px 0;
+        &-title {
+            h2 {
+                font-size: 28px;
+                line-height: 38px;
+            }
+        }
+        &-inner {
+            ul {
+                width: 100%;
+            }
+            li {
+                max-width: 266px;
+            }
+            li+li {
+                margin-left: 10px;
+            }
+        }
+        &-btn {
+            display: none;
+        }
+    }
+}
 
 // 320
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+    .slider {
+        margin: 75px 0;
+        &-title {
+            h2 {
+                font-size: 28px;
+                line-height: 38px;
+            }
+        }
+        &-inner {
+            ul {
+                width: 100%;
+            }
+            li {
+                max-width: 266px;
+            }
+            li+li {
+                margin-left: 10px;
+            }
+        }
+        &-btn {
+            display: none;
+        }
+    }
+}
