@@ -1,0 +1,205 @@
+.faq {
+    margin: 110px 0;
+    &-inner {
+        &__title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 74px;
+            h2 {
+                @extend%title-h2;
+            }
+            p {
+                display: flex;
+                align-items: center;
+                font-size: 20px;
+                line-height: 30px;
+                @extend%font-m;
+                color: $c300;
+                span {
+                    margin-left: 43px;
+                    display: block;
+                    width: 28px;
+                    height: 28px;
+                    background-image: url('/img/svg/fq-title-i.svg');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+        }
+    }
+    &-box {
+        &__accordion {
+            background-color: $default;
+            color: $c300;
+            font-size: 20px;
+            line-height: 30px;
+            @extend%font-m;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            transition: 0.4s;
+            border: 1px solid #F5F5F5;
+            box-shadow: 0px 19px 42px rgba(140, 154, 187, 0.09);
+            border-radius: 10px;
+            @extend%d-tr;
+            &--marg {
+                margin: 24px 0px;
+            }
+        }
+        &__accordion::after {
+            content: "";
+            background-image: url('/img/svg/faq-plus-icon.svg');
+            background-repeat: no-repeat;
+            display: block;
+            float: right;
+            margin-left: 5px;
+            background-size: cover;
+            background-position: center center;
+            width: 28px;
+            height: 28px;
+        }
+        .active:after {
+            content: "";
+            background-image: url('/img/svg/faq-minus-icon.svg');
+            background-repeat: no-repeat;
+            display: block;
+            background-size: cover;
+            background-position: center center;
+            width: 28px;
+            height: 28px;
+            text-align: center;
+        }
+        .active,
+        &__accordion:hover {
+            @extend%border-ef;
+            @extend%h-tr;
+        }
+        &__panel {
+            p {
+                width: 1159px;
+                font-size: 18px;
+                line-height: 28px;
+                @extend%font-m;
+                padding: 48px 0 34px 28px;
+            }
+            border: 1px solid #F5F5F5;
+            box-shadow: 0px 19px 42px rgba(140,
+            154,
+            187,
+            0.09);
+            border-radius: 0px 0px 10px 10px;
+            display: none;
+            overflow: hidden;
+        }
+    }
+}
+
+// 768
+@media (max-width: 768px) {
+    .faq {
+        &-inner {
+            &__title {
+                flex-direction: column;
+            }
+        }
+        &-box {
+            &__panel {
+                p {
+                    width: 100%;
+                    padding: 40px 13px;
+                }
+            }
+        }
+    }
+}
+
+// 600
+@media (max-width: 600px) {
+    .faq {
+        &-inner {
+            &__title {
+                flex-direction: column;
+            }
+        }
+        &-box {
+            &__panel {
+                p {
+                    width: 100%;
+                    padding: 40px 13px;
+                }
+            }
+        }
+    }
+}
+
+// 480
+@media (max-width: 480px) {
+    .faq {
+        &-inner {
+            &__title {
+                flex-direction: column;
+            }
+        }
+        &-box {
+            &__panel {
+                p {
+                    width: 100%;
+                    padding: 40px 13px;
+                }
+            }
+        }
+    }
+}
+
+// 320
+@media (max-width: 320px) {
+    .faq {
+        margin: 75px 0;
+        &-inner {
+            &__title {
+                flex-direction: column;
+                h2 {
+                    font-size: 28px;
+                    line-height: 38px;
+                }
+                p {
+                    font-size: 12px;
+                    line-height: 22px;
+                    span {
+                        margin-left: 30px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+        }
+        &-box {
+            &__accordion {
+                font-size: 16px;
+                line-height: 26px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            &__accordion::after {
+                width: 20px;
+                height: 20px;
+            }
+            .active::after {
+                width: 20px;
+                height: 20px;
+            }
+            &__panel {
+                p {
+                    text-align: center;
+                    width: 100%;
+                    font-size: 13px;
+                    line-height: 23px;
+                    padding: 40px 13px;
+                }
+            }
+        }
+    }
+}
