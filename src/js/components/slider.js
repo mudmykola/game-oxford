@@ -1,8 +1,10 @@
 var swiper = new Swiper(".sliderSwiper", {
-    slidesPerView: 1,
-    slidesPerColumn: 2,
-    spaceBetween: 30,
-    loop: true,
+    slidesPerView: 3,
+    keyboardControl: true,
+    mousewheelControl: true,
+    // slidesPerColumn: 2,
+    // spaceBetween: 30,
+    loop: false,
     navigation: {
         nextEl: ".slider-btn__next",
         prevEl: ".slider-btn__prev",
