@@ -1,0 +1,234 @@
+.tutorials {
+    margin-top: 164px;
+    &-inner {
+        &__title {
+            h2 {
+                @extend%title-h2;
+            }
+            p {
+                font-size: 23px;
+                line-height: 33px;
+                color: #959799;
+                margin-top: 35px;
+            }
+        }
+        &__video {
+            margin-top: 70px;
+        }
+    }
+    &-sub {
+        margin-bottom: 18px;
+        ul {
+            display: flex;
+            align-items: center;
+            li {
+                img {
+                    margin-right: 10px;
+                }
+                p {
+                    font-size: 24px;
+                    line-height: 34px;
+                    @extend%font-b;
+                    color: $c300;
+                }
+                h4 {
+                    margin: 0;
+                    font-size: 18px;
+                    line-height: 28px;
+                    @extend%font-r;
+                    span {
+                        color: $c100;
+                        @extend%font-m;
+                    }
+                }
+            }
+            li+li {
+                margin-left: 28px;
+            }
+        }
+        &__item {
+            display: flex;
+            align-items: center;
+            padding: 7px 30px 7px 16px;
+            background: #F2F4FB;
+            border-radius: 51px;
+        }
+    }
+    &-video {
+        display: flex;
+        &__player {
+            iframe {
+                width: 808px;
+                height: 529px;
+                border-radius: 15px;
+            }
+        }
+        &__links {
+            margin-top: 32px;
+            ul {
+                display: flex;
+                align-items: center;
+            }
+            li {
+                display: flex;
+                align-items: center;
+                background: #F5F3FF;
+                border-radius: 6px;
+                padding: 24px 36px;
+                @extend%d-tr;
+                cursor: pointer;
+                img {
+                    margin-right: 10px;
+                }
+                a {
+                    font-size: 16px;
+                    line-height: 23px;
+                    @extend%font-m;
+                    color: $c100;
+                }
+            }
+            li+li {
+                margin-left: 31px;
+            }
+            li:hover {
+                @extend%border-ef;
+            }
+        }
+    }
+    &-video__box {
+        background-color: #F2F4FB;
+        width: 420px;
+        height: 528px;
+        border-radius: 0 15px 15px 0;
+        h2 {
+            @extend%font-b;
+            font-size: 24px;
+            line-height: 34px;
+            color: $c300;
+            padding: 23px 0 0 30px;
+        }
+    }
+    &-box {
+        &__wrapper {
+            display: block;
+            height: 387px;
+            overflow-y: auto;
+            scrollbar-color: $c100 $c900;
+            scroll-behavior: smooth;
+            margin-top: 15px;
+            button {
+                margin-top: 15px;
+            }
+            button:first-child {
+                margin-top: 0;
+            }
+        }
+        &__accordion {
+            padding-left: 30px;
+            display: flex;
+            text-align: inherit;
+            flex-direction: column;
+            position: relative;
+            background: inherit;
+            border: none;
+            width: 100%;
+            transition: 0.4s;
+            @extend%d-tr;
+            cursor: pointer;
+            &--text {
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                line-height: 26px;
+                color: $c300;
+                h1 {
+                    margin-left: 5px;
+                    @extend%font-r;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: $c300;
+                }
+            }
+            &--subtext {
+                display: flex;
+                align-items: center;
+                font-size: 14px;
+                line-height: 20px;
+                @extend%font-m;
+                opacity: 0.5;
+                color: $c300;
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+        &__accordion:hover {
+            @extend%border-ef;
+        }
+        &__panel {
+            display: none;
+            overflow: none;
+            margin-top: 15px;
+            background: $c100;
+            border: 1px solid $c100;
+            padding: 10px 0 29px;
+            z-index: 99;
+            opacity: 0.8;
+            ul {
+                margin-left: 90px;
+            }
+            li {
+                a {
+                    font-size: 14px;
+                    line-height: 24px;
+                    @extend%font-r;
+                    color: $default;
+                    display: flex;
+                    align-items: center;
+                }
+                a:before {
+                    margin-right: 13px;
+                    display: block;
+                    align-items: center;
+                    content: "";
+                    width: 4px;
+                    height: 4px;
+                    background: #FFFFFF;
+                    transform: rotate(45deg);
+                }
+            }
+            li+li {
+                margin-top: 15px;
+            }
+        }
+        &__panel--title {
+            display: flex;
+            align-items: center;
+            p {
+                font-size: 14px;
+                line-height: 24px;
+                @extend%font-m;
+                color: $default;
+                margin: 0 17px;
+            }
+            h1 {
+                font-size: 18px;
+                line-height: 28px;
+                color: $default;
+                @extend%font-m;
+            }
+        }
+    }
+}
+
+// 768
+@media (max-width: 768px) {}
+
+// 600
+@media (max-width: 600px) {}
+
+// 480
+@media (max-width: 480px) {}
+
+// 320
+@media (max-width: 320px) {}
