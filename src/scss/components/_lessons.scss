@@ -15,6 +15,11 @@
         justify-content: center;
         height: 100%;
         &__wrapper {
+            display: block;
+            height: 387px;
+            overflow-y: auto;
+            scrollbar-color: $c100 $c900;
+            scroll-behavior: smooth;
             margin: 109px 0 100px;
             width: 704px;
             button {
@@ -34,8 +39,22 @@
             background-size: cover;
             width: 497px;
             height: 497px;
-            top: -10%;
+            top: -5%;
             left: 0;
+            z-index: -1;
+        }
+        &__wrapper::after {
+            content: "";
+            position: absolute;
+            display: block;
+            background-image: url('/img/accordeon-el-2.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: 239px;
+            height: 361px;
+            top: 25%;
+            right: -7%;
             z-index: -1;
         }
         &__accordion {
@@ -150,13 +169,79 @@
 }
 
 // 768
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    .lessons {
+        margin: 75px 0;
+        &-box {
+            &__wrapper:before {
+                display: none;
+            }
+        }
+    }
+}
 
 // 600
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+    .lessons {
+        margin: 75px 0;
+        &-inner {
+            h2 {
+                font-size: 35px;
+                line-height: 45px;
+                margin-top: 35px;
+            }
+        }
+        &-box {
+            &__wrapper:after {
+                display: none;
+            }
+            &__wrapper:before {
+                display: none;
+            }
+        }
+    }
+}
 
 // 480
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .lessons {
+        margin: 75px 0;
+        &-inner {
+            h2 {
+                font-size: 35px;
+                line-height: 45px;
+                margin-top: 35px;
+            }
+        }
+        &-box {
+            &__wrapper:after {
+                display: none;
+            }
+            &__wrapper:before {
+                display: none;
+            }
+        }
+    }
+}
 
 // 320
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+    .lessons {
+        margin: 75px 0;
+        &-inner {
+            h2 {
+                font-size: 35px;
+                line-height: 45px;
+                margin-top: 35px;
+            }
+        }
+        &-box {
+            &__wrapper:after {
+                display: none;
+            }
+            &__wrapper:before {
+                display: none;
+            }
+        }
+    }
+}
