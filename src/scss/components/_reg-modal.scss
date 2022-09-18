@@ -1,0 +1,87 @@
+.reg {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 40%;
+    z-index: 1;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    animation: backInDown;
+    animation-duration: 1s;
+    h2 {
+        @extend%title-h2;
+        font-size: 30px;
+        line-height: 40px;
+        margin-top: 20px;
+    }
+    ul {
+        padding: 30px 0;
+        li+li {
+            margin-top: 25px;
+        }
+        li {
+            input {
+                border: none;
+                border-bottom: 1px solid $c900;
+                font-size: 14px;
+                line-height: 24px;
+                color: $c600;
+            }
+        }
+    }
+    button {
+        @extend%g-global;
+        margin-top: 15px;
+        width: 100px;
+        height: 38px;
+    }
+    span {
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    @extend%d-tr;
+    cursor: pointer;
+}
+
+.reg:hover {
+    @extend%border-ef;
+}
+
+// 768
+@media (max-width: 768px) {
+    .reg {
+        top: 12%;
+        left: 30%;
+    }
+}
+
+// 600
+@media (max-width: 600px) {
+    .reg {
+        top: 12%;
+        left: 25%;
+    }
+}
+
+// 480
+@media (max-width: 480px) {
+    .reg {
+        top: 12%;
+        left: 20%;
+    }
+}
+
+// 320
+@media (max-width: 320px) {
+    .reg {
+        top: 12%;
+        left: 4%;
+    }
+}

@@ -39,7 +39,7 @@
                                     <li> <a href="#">Tests</a></li>
                                 </a>
                                 <div class="header-burger__auth">
-                                    <button class="header-burger__reg"> <p>Registration</p> </button>
+                                    <button class="header-burger__reg" id="regMob"> <p>Registration</p> </button>
                                     <button class="header-burger__sign"> Sign in</button>
                                 </div>
                             </ul>
@@ -47,11 +47,12 @@
                     </nav>
                     <!-- end hamburger -->
                     <div class="header-top__auth">
-                        <button class="header-top__reg"><span></span> Registration</button>
-                        <button class="header-top__sign"><span></span>  Sign in</button>
+                        <button class="header-top__reg" id="regBtn"><span></span> Registration</button>
+                        <button class="header-top__sign" id="signBtn"><span></span>  Sign in</button>
                     </div>
                 </div>
             </div>
+            @include('./reg-modal.html')
             <div class="header-cont animate__animated animate__bounceInLeft">
                 <div class="header-cont__text">
                     <div class="header-cont__title">
@@ -64,7 +65,10 @@
                 <div class="header-cont__video">
                     <iframe src="https://www.youtube.com/embed/J8lJtgyAcIA" title="Other Earths: The Search for Habitable Planets - 4k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                         </iframe>
-                    <button>For the first lecture<span></span></button>
+                    <a href="../courses.html">
+                        <button>For the first lecture<span></span></button>
+                    </a>
+
                 </div>
             </div>
         </div>
